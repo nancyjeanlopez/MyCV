@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'verdana', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-color: gold;
+  background-image: linear-gradient(gold, goldenrod);
+}
+
+.anchor {
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 15px;
+  display: flex;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  background-color: gold;
+  color: black;
+  transition: all ease 0.2s;
+}
+
+nav .menu-btn,
+.menu-icon {
+  display: none;
+}
+
+@media (max-width:2500px) {
+  .intro {
+    width: 100%;
+  }
+
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hello {
+    margin: 10px;
+  }
+}
+
+@media(max-width:900px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    justify-content: space-between;
+    height: 65px;
+    padding: 0px 30px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  nav .menu li a {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 25px;
+    color: gold;
+  }
+
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  nav .menu-icon .nav-icon {
+    background-color: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2 ease-out;
+    width: 18px;
+  }
+
+  nav .menu-icon .nav-icon:before,
+  nav .menu-icon .nav-icon:after {
+    background: white;
+    content: ' ';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+
+  nav .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+
+  nav .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+
+  nav .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+  }
+
+  nav .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  nav .menu-btn:checked~.menu {
+    display: block;
+  }
+
+  .intro {
+    border: 0;
+  }
+}
+
+@media (max-width:720px) {
+  .hero {
+    display: none;
+  }
+
+  .hello {
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width:530px) {
+  .text {
+    width: 80%;
+  }
+}
+
+.hero img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  vertical-align: bottom;
+  -webkit-filter: drop-shadow(20px 20px 15px white);
+}
+
+.hero {
+  width: 500px;
+  height: 350px;
+}
+
+.wfh img {
+    width:75%;
+    max-width: 850px;
+    margin-bottom:20px;
+    -webkit-filter: drop-shadow(10px 10px 10px gray);
+}
+
+.fa-google {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+
+.fa-deviantart {
+  background: black;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 70px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.intro {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.hello {
+  width: 500px;
+  margin-top: -25px;
+}
+
+.hello h1 {
+  color: black;
+  line-height: 30px;
+}
+
+.hello p {
+  color: black;
+}
+
+#main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 25px auto 50px auto;
+}
+
+.text {
+  width: 80%;
+}
+
+p.indent {
+  margin-left: 5vw;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: gold;
+  background-image: linear-gradient(goldenrod, gold);
+
+}
+
+footer p {
+  margin: 15px 0px;
+  color: black;
+  font-size: 0.9rem;
+}
