@@ -25,7 +25,7 @@ a {
 }
 
 #main {
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   position: relative;
   background-color: gold;
@@ -46,7 +46,7 @@ nav {
   position: fixed;
   left: 0px;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   background-color: black;
 }
@@ -105,7 +105,7 @@ a:hover {
   nav {
     justify-content: space-between;
     height: 65px;
-    padding: 0px 30px;
+    padding: 0px;
   }
 
   .menu {
@@ -114,17 +114,17 @@ a:hover {
     top: 65px;
     left: 0px;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     padding: 0px;
     margin: 0px;
   }
 
   .menu li {
-    width: 100%;
+    width: 100vw;
   }
 
   nav .menu li a {
-    width: 100%;
+    width: 100vw;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -197,7 +197,7 @@ a:hover {
   }
 
   .hello {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     text-align: center;
     left: 50%;
@@ -295,7 +295,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100vw;
   margin: 25px auto 50px auto;
 }
 
