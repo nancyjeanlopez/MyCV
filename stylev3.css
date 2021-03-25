@@ -74,6 +74,12 @@ nav .menu-btn,
   display: none;
 }
 
+a:hover {
+  background-color: gold;
+  color: black;
+  transition: all ease 0.2s;
+}
+
 @media (max-width:2500px) {
   .intro {
     width: 100%;
@@ -84,9 +90,6 @@ nav .menu-btn,
     height: 300px;
   }
 
-  .hello {
-    margin: 10px;
-  }
 }
 
 @media(max-width:900px) {
@@ -183,9 +186,13 @@ nav .menu-btn,
   .hero {
     display: none;
   }
+  
+  figure {
+    display: none;
+  }
 
   .hello {
-    width: 70%;
+    width: 100%;
     position: absolute;
     text-align: center;
     left: 50%;
