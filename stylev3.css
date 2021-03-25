@@ -231,7 +231,7 @@ a:hover {
 
 @media (max-width:530px) {
   .text {
-    width: 80vw;
+    width: 80%;
   }
   
   .intro {
@@ -260,7 +260,7 @@ a:hover {
 }
 
 .wfh {
-  width: 75%;
+  width: 70%;
 }
 
 .fa-google {
