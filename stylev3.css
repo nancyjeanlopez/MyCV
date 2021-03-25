@@ -260,6 +260,10 @@ a:hover {
     -webkit-filter: drop-shadow(10px 10px 10px gray);
 }
 
+.wft {
+  width: 80vw;
+}
+
 .fa-google {
   background: black;
   color: white;
@@ -336,7 +340,7 @@ p {
 }
 
 .text {
-  width: 80%;
+  width: 80vw;
 }
 
 p.indent {
