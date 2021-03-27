@@ -95,6 +95,29 @@ a:hover {
   transition: all ease 0.2s;
 }
 
+.skills {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 30vw;
+}
+
+.column ul {
+  list-style: square;
+  margin: 3%;
+}
+
+.column ul lh {
+  padding-bottom: 5px;
+}
+
+.column ul li {
+  line-height: 2rem;
+
+}
+
 @media (max-width:2500px) {
   .intro {
     width: 100vw;
@@ -227,6 +250,15 @@ a:hover {
   footer {
     text-align: center;
   }
+  
+    .skills {
+    flex-direction: column;
+  }
+
+  .column {
+    width:auto;
+    float: none;
+  }
 }
 
 @media (max-width:530px) {
@@ -335,7 +367,7 @@ p {
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  margin: 25px auto 50px auto;
+  margin: 15px auto 15px auto;
 }
 
 .text {
