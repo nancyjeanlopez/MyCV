@@ -210,6 +210,11 @@ a:hover {
     transform: rotate(-45deg);
     top: 0;
   }
+  
+  nav .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
 
   nav .menu-btn:checked~.menu {
     display: block;
