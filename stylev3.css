@@ -39,7 +39,7 @@ section {
   height: 80vh;
   position: relative;
   background-color: gold;
-  background-image: linear-gradient(goldenrod, gold, gold, gold, white);
+  background-image: linear-gradient(goldenrod, goldenrod, gold, gold, white);
 }
 
 .anchor {
