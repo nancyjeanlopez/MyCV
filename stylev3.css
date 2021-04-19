@@ -285,8 +285,8 @@ a:hover {
 }
 
 .wfh img {
-    width:75%;
-    max-width: 850px;
+    width:50%;
+    max-width: 750px;
     margin-bottom:20px;
     -webkit-filter: drop-shadow(10px 10px 10px gray);
 }
