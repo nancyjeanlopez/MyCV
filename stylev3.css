@@ -360,6 +360,10 @@ a:hover {
   max-width: 100vw;
 }
 
+.hello a {
+  color: grey;
+}
+
 h3 {
   max-width: 100vw;
 }
